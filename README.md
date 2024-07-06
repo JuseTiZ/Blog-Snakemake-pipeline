@@ -7,7 +7,7 @@
 下载 Pipeline
 
 ```shell
-git clone git@github.com:JuseTiZ/ST-pipeline.git
+git clone https://github.com/JuseTiZ/ST-pipeline.git
 cd ST-pipeline
 ```
 
