@@ -15,6 +15,7 @@ cd ST-pipeline
 
 ```shell
 mamba env create --file envs/environment.yaml
+mamba activate ST-pipeline
 ```
 
 构建 hg38 salmon 索引
