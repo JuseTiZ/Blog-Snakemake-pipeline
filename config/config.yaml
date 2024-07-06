@@ -1,0 +1,17 @@
+inputfile:
+  groupfile: "group.txt"
+
+mode: "paired"
+
+download:
+  retry: 3
+  extract_threads: 8
+
+trim:
+  threads: 8
+  param: ""
+
+salmon:
+  threads: 16
+  salmon_index: "hg38_salmon_index"
+  param: "--seqBias --gcBias --dumpEq"

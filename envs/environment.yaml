@@ -1,0 +1,7 @@
+name: ST-pipeline
+dependencies:
+  - bioconda::sra-tools==3.1.0
+  - bioconda::trim-galore==0.6.10
+  - bioconda::salmon==1.10.2
+  - conda-forge::pigz
+  - bioconda::snakemake==8.15.2
