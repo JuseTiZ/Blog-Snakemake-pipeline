@@ -1,0 +1,9 @@
+samples:
+  hg38_Prdm9A-A-ChIP_rep1:
+    chip: 'SRR11510994'
+    input: 'SRR11510995'
+    type: 'paired'
+  hg38_Prdm9A-A-ChIP_rep2:
+    chip: 'SRR11510996|SRR11510997'
+    input: 'SRR11510998'
+    type: 'paired'

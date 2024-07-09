@@ -1,0 +1,17 @@
+configfile: "config/config.yaml"
+configfile: "config/sample.yaml"
+
+include: "rules/common.smk"
+
+rule all:
+    input:
+        getAllInput(config['samples'])
+
+# Download and extract SRA files
+include: "rules/01_prefetch.smk"
+
+# Trim / Align / Filter
+include: "rules/02_process.smk"
+
+# MACS3 call peak
+include: "rules/03_callpeak.smk"

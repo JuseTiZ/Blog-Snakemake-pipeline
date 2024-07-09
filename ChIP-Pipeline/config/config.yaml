@@ -1,0 +1,20 @@
+download:
+  retry: 3
+  extract_threads: 8
+
+trim:
+  threads: 8
+  param: ""
+
+align:
+  threads: 8
+  index: "/path/to/index"
+  param: ""
+
+filter:
+  threads: 8
+  param: "[XS] == null and not unmapped and not duplicate"
+
+macs:
+  param: "-g hs -B --broad-cutoff 0.1"
+  chromsize: "/path/to/xxx.chrom.sizes"

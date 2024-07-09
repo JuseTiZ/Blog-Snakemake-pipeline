@@ -1,0 +1,13 @@
+name: ChIP-pipeline
+dependencies:
+  - bioconda::sra-tools==3.1.0
+  - bioconda::trim-galore==0.6.10
+  - bioconda::bowtie2==2.5.3
+  - bioconda::sambamba==1.0.0
+  - bioconda::snakemake==7.32.4
+  - conda-forge::pigz
+  - conda-forge::cykhash
+  - conda-forge::python=3.10.13
+  - conda-forge::pip==24.0
+  - pip:
+    - macs3==3.0.1
