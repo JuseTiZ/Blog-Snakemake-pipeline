@@ -1,11 +1,12 @@
 ## ChIP-Pipeline
 
-`config.yaml` 中需要自主准备的参数：
+`config.yaml` 中需要注意的参数：
 
 - bowtie2 使用的索引（align index）。
+- MACS3 使用的参数（macs param）。
 - 染色体大小文件（macs chromsize）。
 
-`sample.yaml` 中需要自主准备的参数：
+`sample.yaml` 中需要注意的参数：
 
 - 不同样本下的处理组 SRR id（chip）。
 - 不同样本下的对照组 SRR id（input）。
