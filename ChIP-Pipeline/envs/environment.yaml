@@ -4,6 +4,7 @@ dependencies:
   - bioconda::trim-galore==0.6.10
   - bioconda::bowtie2==2.5.3
   - bioconda::sambamba==1.0.0
+  - bioconda::samtools==1.19.2
   - bioconda::snakemake==7.32.4
   - conda-forge::pigz
   - conda-forge::cykhash
@@ -11,3 +12,4 @@ dependencies:
   - conda-forge::pip==24.0
   - pip:
     - macs3==3.0.1
+    - numpy==1.26.4

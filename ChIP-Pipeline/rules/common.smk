@@ -16,6 +16,13 @@ def getInputBam(sample, samples):
     inputfiles = [f"bowtie2_alignment/{srr}_{type}.filter.bam" for srr in srrlist]
     return ' '.join(inputfiles)
 
+def getBamType(sample, samples):
+    '''
+    Get bam type to specify in macs3 call peak.
+    '''
+    type = 'BAM' if samples[sample]['type'] == 'single' else 'BAMPE'
+    return type
+
 def getInputMACS3(sample, samples):
     '''
     Get input file for macs3 rule.
