@@ -18,10 +18,10 @@ mamba env create --file envs/environment.yaml
 mamba activate ChIP-pipeline
 ```
 
-此外，还需自行下载 `bedGraphToBigWig` （[下载地址](http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/)）并将其放置于环境变量中以便在 MACS3 后调用，或者你也可以使用 conda 下载：
+此外，还需自行下载 `bedGraphToBigWig` （[下载地址](http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/)）并将其放置于环境变量中以便在 MACS3 后调用，或者你也可以使用 mamba 下载：
 
 ```
-conda install bioconda::ucsc-bedgraphtobigwig
+mamba install bioconda::ucsc-bedgraphtobigwig
 ```
 
 此后，请对 `config/config.yaml` 及 `config/sample.yaml` 进行修改，然后运行 Pipeline

@@ -10,6 +10,7 @@ dependencies:
   - conda-forge::cykhash
   - conda-forge::python=3.10.13
   - conda-forge::pip==24.0
+  - anaconda::graphviz
   - pip:
     - macs3==3.0.1
     - numpy==1.26.4
