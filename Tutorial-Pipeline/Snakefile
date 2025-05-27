@@ -7,7 +7,6 @@ include: "rules/common.smk"
 
 rule all:
     input:
-        expand("rawfastq/{srr}/{srr}.sra", srr=srrlist) + 
         expand("results/{sample}/quant.sf", sample=samples)
 
 # download and extract SRA files

@@ -40,26 +40,9 @@ def getAllInput(samples):
     '''
     Get all Input file for Snakemake.
     '''
-    fastqfile = []
-    bamfile = []
     peakfile = []
 
     for sample, info in samples.items():
         peakfile.append(f'results/{sample}/{sample}_peaks.narrowPeak')
-        srrids = []
 
-        for srrtype in ['chip', 'input']:
-            srrlist = info[srrtype].split('|')
-            srrids += srrlist
-        
-        for srrid in srrids:
-            if info['type'] == 'single':
-                fastqfile.append(f'rawfastq/{srrid}.fastq.gz')
-                bamfile.append(f'bowtie2_alignment/{srrid}_se.bam')
-            elif info['type'] == 'paired':
-                fastqfile.append(f'rawfastq/{srrid}_1.fastq.gz')
-                fastqfile.append(f'rawfastq/{srrid}_2.fastq.gz')
-                bamfile.append(f'bowtie2_alignment/{srrid}_pe.bam')
-    
-    inputfile = fastqfile + bamfile + peakfile
-    return inputfile
+    return peakfile
