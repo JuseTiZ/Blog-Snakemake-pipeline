@@ -1,6 +1,5 @@
 configfile: "config/config.yaml"
 
-srrlist = set([line.strip().split()[0] for line in open(config["inputfile"]["groupfile"], 'r')])
 samples = set([line.strip().split()[1] for line in open(config["inputfile"]["groupfile"], 'r')])
 
 include: "rules/common.smk"
